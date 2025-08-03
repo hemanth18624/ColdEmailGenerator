@@ -28,18 +28,5 @@ Designed with a clean **Streamlit UI**, powered by **LangChain** for LLM orchest
 | **UI Framework** | Streamlit |
 | **LLM Orchestration** | LangChain |
 | **Performance Acceleration** | Groq |
-| **Backend Language** | Python |
 
----
 
-## 📂 Project Structure
-
-```plaintext
-Cold-Email-Generator/
-│
-├── app.py                 # Main Streamlit application
-├── chains/                # LangChain pipeline scripts
-├── portfolio/             # Portfolio data handling
-├── utils/                 # Helper functions
-├── requirements.txt       # Python dependencies
-└── README.md              # Project documentation
