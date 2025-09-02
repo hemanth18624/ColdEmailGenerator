@@ -8,8 +8,7 @@ class Portfolio:
         self.file_path = file_path
         self.data = pd.read_csv(file_path)
 
-        # Use only supported fields
-        settings = Settings()  # no telemetry param
+        settings = Settings() 
         self.chroma_client = chromadb.PersistentClient(path='vectorstore', settings=settings)
         self.collection = self.chroma_client.get_or_create_collection(name="portfolio")
 
