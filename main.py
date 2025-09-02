@@ -43,25 +43,6 @@ def create_streamlit_app(llm, portfolio, clean_text):
             st.error(f"An Error Occurred: {e}")
 
 
-# for job in jobs:
-#     skills = job.get('skills', [])
-#     if not isinstance(skills, list):
-#         skills = [skills]
-#     # make sure all skill items are strings
-#     skills = [str(s) for s in skills if s is not None]
-#     links_metadata = portfolio.query_links(skills)
-#     # convert metadata to a readable comma-separated list of links
-#     link_list = ", ".join(m.get("links", "") for m in links_metadata if m.get("links"))
-#     email = llm.write_mail(company_name, position, name, company_description, job, link_list)
-#     st.code(email, language='markdown')
-
-
-
-# for job in jobs:
-#                 skills = job.get('skills', [])
-#                 links = portfolio.query_links(skills)
-#                 email = llm.write_mail(company_name, position,name, company_description, job, links)
-#                 st.code(email, language='markdown')
 
 
 
